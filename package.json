@@ -1,0 +1,21 @@
+{
+  "name": "cm6-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "Alasdair Smith <ali@alasdairsmith.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/next": "^0.1.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}

@@ -25,7 +25,8 @@ class DeleteMarkerWidget extends WidgetType {
   }
 }
 const deleteMarkerDeco = Decoration.widget(8, {
-  widget: new DeleteMarkerWidget('widget')
+  widget: new DeleteMarkerWidget('widget'),
+  side: 1 // Typing immediately to the left will move it forward
 })
 
 const trackedChangesPlugin = ViewPlugin.decoration({

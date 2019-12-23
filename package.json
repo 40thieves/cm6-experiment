@@ -11,7 +11,7 @@
   "author": "Alasdair Smith <ali@alasdairsmith.co.uk>",
   "license": "MIT",
   "dependencies": {
-    "@codemirror/next": "git+https://github.com/codemirror/codemirror.next.git"
+    "@codemirror/next": "^0.3.0"
   },
   "devDependencies": {
     "html-webpack-plugin": "^3.2.0",

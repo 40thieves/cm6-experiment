@@ -13,6 +13,23 @@ import { lineNumbers } from '@codemirror/next/gutter'
 import { keymap } from '@codemirror/next/keymap'
 import { baseKeymap } from '@codemirror/next/commands'
 
+import { LezerSyntax } from '@codemirror/next/syntax'
+import { styleTags, defaultHighlighter } from '@codemirror/next/highlight'
+import { parser } from './latex'
+
+const latexSyntax = new LezerSyntax(
+  parser.withProps(
+    styleTags({
+      Command: 'keyword',
+      'Options Arguments Math': 'string'
+    })
+  )
+)
+
+function latex() {
+  return latexSyntax.extension
+}
+
 const insertMarkerDeco = Decoration.mark(2, 5, {
   attributes: { style: 'background: green' }
 })
@@ -40,8 +57,10 @@ const trackedChangesPlugin = ViewPlugin.decoration({
 })
 
 const state = EditorState.create({
-  doc: 'hello world',
+  doc: `this is some \\foo{normal} text`,
   extensions: [
+    latex(),
+    defaultHighlighter,
     trackedChangesPlugin,
     lineNumbers(),
     history(),

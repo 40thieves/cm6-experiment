@@ -2,16 +2,16 @@
 const {Parser} = require("lezer")
 const {NodeProp} = require("lezer")
 exports.parser = Parser.deserialize({
-  states: "#lOPOPOOOZOPO'#C^O_OPO'#CaOOOP'#Cc'#CcQOOOOOOiOPO,58xOOOP,58{,58{OvOPO,58{OzOPO'#C_O!ROPO'#C`OOOP1G.d1G.dO!YOPO1G.dOOOP1G.g1G.gOOOP,58y,58yO!dOPO,58yOOOP,58z,58zO!hOPO,58zOOOP7+$O7+$OOOOP1G.e1G.eOOOP1G.f1G.f",
-  stateData: "!l~WROXPO^QO~WTO~WVOXPO^UO~YWO[XOUQa^Qa~^[O~W^OZ]O~W`O]_O~[XOUQi^Qi~ZbO~]cO~",
-  goto: "nWPPX_bhPkQRORVQRZTQYTRaZRRORSO",
+  states: "#xOSOPOOO^OPO'#C^ObOPO'#CaOROP'#Cf'#CfOROP(3@t(3@tQSOPOOOlOPO,58xOROP,58{,58{O!POPO,58{OROP,58|,58|O!TOPO'#C_O![OPO'#C`OROP1G.d1G.dO!cOPO1G.dOROP1G.g1G.gOROP,58y,58yO!sOPO,58yOROP,58z,58zO!wOPO,58zOROP7+$O7+$OOROP1G.e1G.eOROP1G.f1G.f",
+  stateData: "!{XOS~ZRO[POaQO~ZUO~ZWO[POaVO~]YO_ZOVQaZQa[QaaQa~a^O~Z`O^_O~ZbO`aO~_ZOVQiZQi[QiaQi~^dO~`eO~",
+  goto: "zZPP[cflpPPPvSROTRWQR]UQ[URc]TROTQTORXTTSOT",
   nodeNames: "⚠ LaTeX Command Options Arguments Math",
   nodeProps: [
     [NodeProp.top, 1,true]
   ],
-  repeatNodeCount: 0,
-  tokenData: "#t~RbX^!Zpq!Ztu#U!c!}!Z!}#O#Z#O#P#`#P#Q#e#T#o!Z#o#p#j#q#r#o#y#z!Z$f$g!Z#BY#BZ!Z$IS$I_!Z$I|$JO!Z$JT$JU!Z$KV$KW!Z&FU&FV!Z~!`[W~X^!Zpq!Z!c!}!Z#T#o!Z#y#z!Z$f$g!Z#BY#BZ!Z$IS$I_!Z$I|$JO!Z$JT$JU!Z$KV$KW!Z&FU&FV!Z~#ZO^~~#`OY~~#eOX~~#jOZ~~#oO[~~#tO]~",
+  repeatNodeCount: 1,
+  tokenData: "#y~RbX^!Zpq!Ztu#O!c!}#T!}#O#`#O#P#e#P#Q#j#T#o#T#o#p#o#q#r#t#y#z!Z$f$g!Z#BY#BZ!Z$IS$I_!Z$I|$JO!Z$JT$JU!Z$KV$KW!Z&FU&FV!Z~!`YX~X^!Zpq!Z#y#z!Z$f$g!Z#BY#BZ!Z$IS$I_!Z$I|$JO!Z$JT$JU!Z$KV$KW!Z&FU&FV!Z~#TOa~~#YQZ~!c!}#T#T#o#T~#eO]~~#jO[~~#oO^~~#tO_~~#yO`~",
   tokenizers: [0],
-  specializeTable: 0,
-  tokenPrec: 0
+  specializeTable: 3,
+  tokenPrec: 3
 })
